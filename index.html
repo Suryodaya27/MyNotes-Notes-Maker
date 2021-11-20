@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+
+	<script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+
+	<title>Notes maker</title>
+</head>
+
+<body class="bg-dark">
+
+      <nav class="navbar ">
+        <div class="container-fluid">
+			
+					<font face="Comic sans MS"
+						size="11" color="white">
+						<strong>MyNotes</strong>
+					</font>
+		</div>
+    </nav>
+	<div class="container mt-3 my-5">
+		<h2 class="text-light">Add Notes</h2>
+
+		<label id="lblsuccess" class="text-success"
+				style="display: none;">
+		</label>
+		
+		<form id="addForm">
+			<div class="row container">
+				<div class="container">
+
+					<textarea class="form-control container" id="item" rows="6" onkeyup="toggleButton(this, 'submit')">
+						
+                    </textarea>
+				</div>
+
+				<input type="submit" class="btn btn-light my-4"
+						id="submit" value="Make Note" disabled>
+
+			</div>
+		</form>
+
+		<h3 class="mt-4 text-light">Notes</h3>
+
+		<form id="addForm container">
+			<ul class="list-group" id="items"></ul>
+		</form>
+	</div>
+</body>
+
+</html>
